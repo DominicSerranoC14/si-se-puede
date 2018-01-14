@@ -1,0 +1,18 @@
+{
+  "name": "si-se-puede",
+  "version": "1.0.0",
+  "description": "> Si se puede! (Yes one can!) - The motto of the United Farm Workers. In 1972, during Cesar Chavez's 25-day fast in Phoenix, Arizona.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ENV=development node_modules/nodemon/bin/nodemon.js server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
