@@ -19,6 +19,13 @@ app.use((req, res) => {
     res.json({ message: 'Route not found', status: res.statusCode });
 });
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(req.method, req.url);
+    console.error(err.stack);
+    res.json({ error: 'Something went wrong' });
+});
+
 // Connect to db and listen to server
 connect()
 .then(() => {
